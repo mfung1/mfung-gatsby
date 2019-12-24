@@ -1,9 +1,24 @@
 .grid {
   display: grid;
+  align-items: center;
   margin: 0;
 
   &-half {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 24px;
+  }
+
+  &-third {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+  }
+  &-gap-16 {
+    grid-gap: 16px;
+  }
+  &-gap-24 {
+    grid-gap: 24px;
+  }
+  &-gap-42 {
+    grid-gap: 42px;
   }
 }

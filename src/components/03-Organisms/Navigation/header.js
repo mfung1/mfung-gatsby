@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => (
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 1058,
+        maxWidth: 1236,
         padding: `89px 24px 0`,
       }}
     >
@@ -36,7 +36,7 @@ const Header = ({ siteTitle }) => (
             text="Blog"
           />
           <MFLink
-            path="/portfolio"
+            path="/"
             level="t1"
             text="Portfolio"
           />

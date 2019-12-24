@@ -2,18 +2,15 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import Heading from '../components/01-Atoms/Typography/Headings';
+import Paragraph from "../components/01-Atoms/Typography/Paragraphs/index";
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
+    <Heading level="h1" text="Hello World"/>
+    <Paragraph level="t1" text="This is a test paragraph."/>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )

@@ -2,8 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Heading from '../components/01-Atoms/Typography/Headings';
-import Paragraph from "../components/01-Atoms/Typography/Paragraphs/index";
+import Hero from '../components/03-Organisms/Hero/hero';
 import SEO from "../components/seo"
 
 const IndexPage = () => (

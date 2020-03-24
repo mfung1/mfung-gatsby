@@ -2,12 +2,37 @@
 
 .mf-hero {
   display: flex;
-  flex-direction: column;
-  
-  &_txt {
-    flex: 1 0 50%;
+  flex-direction: column-reverse;
+  margin-bottom: 52px;
+  width:100%;
+  padding: 12px 24px;
+  &_img-cnt {
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &_txt,
+  &_img-cnt {
+    justify-self: center;
   }
   &_img {
-    flex: 1 0 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  @include breakpoint ('tablet') {
+    max-width: 1440px;
+    margin: 0 auto 52px;
+    flex-direction: row;
+    
+    &_txt {
+      
+      padding: 24px 48px 24px 0;
+    }
+    &_txt,
+    &_img-cnt {
+      align-self: center;
+      flex-direction: row;
+      flex: 1 0 50%;
+    }
   }
 }

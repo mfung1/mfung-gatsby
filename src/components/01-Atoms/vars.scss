@@ -2,16 +2,16 @@ $iceBlue: #edf2f4;
 $dark: #2b2d42;
 $pinkishRed: #ef233c;
 $cherry: #d80032;
-$blueyGrey: rgba(141, 153, 174, 0.2);
+$blueyGrey: #8d99ae;
 $black80: rgba(0,0,0, 0.8);
 $black10: rgba(0,0, 0, 0.1);
 $veryLightPink: #d8d8d8;
 
 // Breakpoints 
-$break-largeDesktop: unit-to-rem(1260px);
-$break-desktop: unit-to-rem(1008px);
-$break-tablet: unit-to-rem(756px);
-$break-mobile: unit-to-rem(504px);
+$break-largeDesktop: 1260px;
+$break-desktop: 1008px;
+$break-tablet: 756px;
+$break-mobile: 504px;
 
 // Media Queries
 @mixin breakpoint($point) {

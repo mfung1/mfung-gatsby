@@ -1,0 +1,55 @@
+@import '../../01-Atoms/vars.scss';
+
+.MF-Content-Stamp_Cnt {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 16px;
+  list-style: none;
+  margin: 0;
+
+  @include breakpoint ('mobile') {
+    grid-template-columns: repeat(2, 294px);
+    grid-template-rows: repeat(2, 256px);
+  }
+
+  @include breakpoint ('desktop') {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 256px;
+  }
+}
+
+.MF-Content-Stamp {
+  padding: 12px 37px 12px 9px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  height:100%;
+
+  &--dark {
+    background-color: $dark;
+    color: $iceBlue;
+  }
+  &--cherry {
+    background-color: $cherry;
+    color: $iceBlue;
+  }
+
+  &--iceBlue {
+    background-color: $iceBlue;
+    color: $cherry;
+  }
+
+  &--pinkishRed {
+    background-color: $pinkishRed;
+    color: $dark;
+  }
+
+  &_label {
+    justify-self: flex-end;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+}

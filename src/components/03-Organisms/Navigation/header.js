@@ -1,7 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
 import styles from './header.module.scss';
-import Grid from '../../01-Atoms/Grid';
 import Logo from '../../01-Atoms/Logo';
 import MFLink from '../../02-Molecules/Link';
 

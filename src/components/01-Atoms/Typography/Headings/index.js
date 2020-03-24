@@ -2,19 +2,19 @@ import React from 'react';
 import styles from './heading.module.scss';
 const H1 = (props) => {
   return (
-    <h1 className={props.theClassName} test={props.theClassName}>{props.text}</h1>
+    <h1 className={`${props.theClassName} ${props.spacing} ${props.colour ? `col-${props.colour}` : ''}`}>{props.text}</h1>
   )
 }
 
 const H2 = (props) => {
   return (
-    <h2 className={props.theClassName}>{props.text}</h2>
+    <h2 className={`${props.theClassName} ${props.spacing} ${props.colour ? `col-${props.colour}` : ''}`}>{props.text}</h2>
   )
 }
 
 const H3 = (props) => {
   return (
-    <h3 className={props.theClassName}>{props.text}</h3>
+    <h3 className={`${props.theClassName} ${props.spacing} ${props.colour ? `col-${props.colour}` : ''}`}>{props.text}</h3>
   )
 }
 

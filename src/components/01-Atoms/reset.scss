@@ -8,3 +8,41 @@
 body {
   background: $iceBlue;
 }
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+.mb-9 {
+  margin-bottom: 9px;
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+.mb-25 {
+  margin-bottom: 25px;
+}
+.mb-76 {
+  margin-bottom: 76px;
+}
+
+.col-dark {
+  color: $dark;
+}
+.col-cherry {
+  color: $cherry;
+}
+.col-iceBlue {
+  color: $iceBlue;
+}
+.col-pinkishRed {
+  colro: $pinkishRed;
+}

@@ -3,20 +3,17 @@ import Heading from '../../01-Atoms/Typography/Headings';
 import Paragraph from '../../01-Atoms/Typography/Paragraphs';
 import Button from '../../02-Molecules/Button';
 
-import styles from './hero.module.scss';
 
 const Hero = () => {
   return (
-    <section className={styles['mf-hero']}>
-      <div className={styles['mf-hero_txt']}>
-        <Heading level="h1" spacing="mb-12" text="I’m Matt, a developer based in Hertfordshire."/>
-        <Paragraph level="t1" spacing="mb-25" text="I’ve worked on some big projects, delivering visual excellence and building highly scalable and maintainable component libraries."/>
+    <section className="mf-hero">
+      <div className="mf-hero_txt">
+        <Paragraph level="t1" colour="clearDay" spacing="mb-14" text="Hi, my name is"/>
+        <Heading level="h1" colour="snowyMint" spacing="mb-11" text="Matt Fung."/>
+        <Heading level="h1" colour="algae" spacing="mb-21" text="I make things for the web."/>
+        <Paragraph level="t2" colour="algae" text="I’ve worked on some big projects, delivering visual excellence and building highly scalable and maintainable component libraries."/>
         <Button text="Contact me"/>
       </div>
-      <picture className={styles['mf-hero_img-cnt']} >
-        <source href="./static/hero.png"/>
-        <img className={styles['mf-hero_img']} src="./static/hero.png" alt=" "/>
-      </picture>
     </section>
   );
 }

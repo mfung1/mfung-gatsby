@@ -1,0 +1,15 @@
+@mixin fontReg {
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+@mixin fontMed {
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+@mixin headings {
+  font-family: 'Libre Baskerville', Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+

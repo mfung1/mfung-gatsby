@@ -1,0 +1,75 @@
+.#{$namespace}-cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 24px;
+
+  @include breakpoint('mobile') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint('desktop') {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.#{$namespace}-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px;
+  min-height: px-to-rem(192px);
+  background-color: $algae;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  @include breakpoint('tablet') {
+    min-height: px-to-rem(256px);
+  }
+
+  h3,
+  p {
+    color: $white;
+  }
+
+  &_label {
+    margin-top: auto;
+    padding: 8px 12px;
+
+    .mf-t3 {
+      @include fontReg;
+    }
+  }
+
+  
+  .#{$namespace}-card_label {
+    color: $white;
+
+    &--html {
+      background-color: $moss;
+      .mf-t3 {
+        color: $white;
+      }
+    }
+    &--css {
+      background-color: $algae;
+      .mf-t3 {
+        color: $white;
+      }
+    }
+    &--js {
+      background-color: $snowyMint;
+      .mf-t3 {
+        color: $algae;
+      }
+    }
+    &--misc {
+      background-color: $moss;
+      .mf-t3 {
+        color: $black;
+      }
+    }
+  }
+
+  
+}

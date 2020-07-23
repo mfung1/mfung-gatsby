@@ -3,7 +3,6 @@ import T1 from './T1/t1';
 import T2 from './T2/t2'
 import T3 from './T3/t3'
 
-import './paragraphs.module.scss'
 
 const Paragraph = (props) => {
   const Paras = {

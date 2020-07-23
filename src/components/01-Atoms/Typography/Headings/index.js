@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './heading.module.scss';
 const H1 = (props) => {
   return (
     <h1 className={`${props.theClassName} ${props.spacing} ${props.colour ? `col-${props.colour}` : ''}`}>{props.text}</h1>
@@ -26,7 +25,7 @@ const Heading = (props) => {
   }
   const TheHeading = Headings[props.level || 'h1'];
   return (
-    <TheHeading theClassName={styles[`mf-${props.level}`]} colour={props.colour} level={props.level} text={props.text} spacing={props.spacing} redDot={props.redDot} centered={props.centered} fls={props.fls}/> 
+    <TheHeading theClassName={`mf-${props.level}`} colour={props.colour} level={props.level} text={props.text} spacing={props.spacing} redDot={props.redDot} centered={props.centered} fls={props.fls}/> 
   )
 }
 

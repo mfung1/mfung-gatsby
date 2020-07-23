@@ -1,0 +1,30 @@
+h1,h2,
+h3,h4 {
+  @include headings;
+  margin-bottom: px-to-rem(19px);
+}
+h1 {
+  font-size: px-to-rem(32px);
+  line-height: px-to-rem(36px);
+}
+
+h2 {
+  font-size: px-to-rem(24px);
+  line-height: px-to-rem(28px);
+}
+
+h3 {
+  font-size: px-to-rem(20px);
+  line-height: px-to-rem(24px);
+}
+
+h4 {
+  font-size: px-to-rem(18px);
+  line-height: px-to-rem(24px);
+}
+
+p,
+a {
+  @include fontReg;
+  font-size: px-to-rem(16px);
+}

@@ -1,0 +1,9 @@
+.#{$namespace}-wrapper {
+  max-width: px-to-rem(1260px);
+  margin: px-to-rem(56px) auto;
+  padding: px-to-rem(24px);
+
+  @include breakpoint('desktop') {
+    padding: px-to-rem(24px) px-to-rem(24px) px-to-rem(72px);
+  }
+}

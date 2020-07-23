@@ -1,0 +1,7 @@
+.mob-hide {
+  display: none;
+
+  @include breakpoint ('largeDesktop') {
+    display: inline-block;
+  }
+}

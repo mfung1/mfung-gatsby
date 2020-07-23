@@ -1,0 +1,74 @@
+.mf-timeline {
+  position: relative;
+  max-width: 491px;
+
+  @include breakpoint('largeDesktop') {
+    display: inline-block;
+    margin-right: 36px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 108px;
+    height: 82%;
+    width: 4px;
+    background-image: linear-gradient(to bottom, transparent 0%, $snowyMint 12.5%, $snowyMint 50%, $algae 100%);
+
+    @include breakpoint(400px) {
+      height: 85%;
+    }
+  }
+
+  &_event {
+    max-width: 320px;
+    .mf-t3:first-of-type {
+      font-style: italic;
+      font-weight: 500;
+    }
+  }
+
+  &_year {
+    display: block;
+    color: $snowyMint;
+    @include headings;
+    font-size: 28px;
+    line-height: 32px;
+    justify-self: right;
+  }
+
+  &_blob {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: $snowyMint;
+    justify-self: center;
+    &--sub {
+      background-color: $algae;
+      box-shadow: inset 0 0 0 9px $snowyMint;
+      width: 27px;
+      height: 27px;
+    }
+    &--past {
+      background-color: $algae;
+    }
+  }
+
+  &_node {
+    display: grid;
+    grid-template-columns: 68px 36px 1fr;
+    grid-gap: 24px;
+    align-items: start;
+    position: relative;
+    margin-bottom: 180px;
+    z-index: 1;
+
+    &:first-child {
+      padding-top: 120px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

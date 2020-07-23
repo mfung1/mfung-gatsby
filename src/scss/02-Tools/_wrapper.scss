@@ -1,0 +1,7 @@
+@mixin wrapper {
+  max-width: px-to-rem(1200px);
+  padding: 36px 12px;
+  @include breakpoint('tablet') {
+    padding: 36px 24px;
+  }
+}

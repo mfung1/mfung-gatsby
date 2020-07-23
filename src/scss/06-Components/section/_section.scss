@@ -1,0 +1,10 @@
+.#{$namespace}-section {
+  margin-bottom: 52px;
+
+  &--algae {
+    background-color: $algae;
+  }
+  &--snowy-mint {
+    background-color: $snowyMint;
+  }
+}

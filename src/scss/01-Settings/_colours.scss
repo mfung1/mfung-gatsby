@@ -1,0 +1,25 @@
+// Brand Colours
+$snowyMint: #ccfccb;
+$algae: #96e6b3;
+$emerald: #439775;
+$moss: #233329;
+$clearDay: #f1fffa;
+
+// Whites
+$white: #ffffff;
+$light-grey: #f6f6f6;
+$med-grey: #cccccc;
+$dark-grey: #666666;
+$black: #333333;
+
+// Brand Palettes
+$buttons: (
+  clearDay: (
+    backgroundColor: $clearDay,
+    textColor: $moss
+  ),
+  algae: (
+    backgroundColor: $algae,
+    textColor: $moss
+  )
+)

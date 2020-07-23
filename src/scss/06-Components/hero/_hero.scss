@@ -1,0 +1,45 @@
+.mf-hero {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 52px;
+  width:100%;
+  padding: 12px 24px;
+  &_img-cnt {
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &_copy,
+  &_img-cnt {
+    justify-self: center;
+  }
+  &_img-cnt {
+    margin: 0 auto 36px;
+  }
+  &_img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 542px;
+    max-height: 545px;
+  }
+  @include breakpoint('tablet') {
+    max-width: 1200px;
+    margin: 0 auto 52px;
+    flex-direction: row;
+    
+    &_copy {
+      padding: 24px 48px 24px 0;
+    }
+    &_img-cnt {
+      margin: 0 auto;
+    }
+    &_copy,
+    &_img-cnt {
+      align-self: center;
+      flex-direction: row;
+      flex: 1 1 50%;
+    }
+  }
+}

@@ -1,9 +1,9 @@
 import React from 'react';
 import {Link} from 'gatsby';
-import styles from './link.module.scss';
+
 const MFLink = (props) => {
   return (
-  <Link to={props.path} className={`${styles['mf-link']} ${props.level ? styles[`mf-link-${props.level}`] : ''}`} activeClassName={styles['mf-link-active']}>
+  <Link to={props.path} className={`mf-link ` + props.classNames} activeClassName="mf-link-active">
     <span>
       {props.text}
     </span>

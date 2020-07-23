@@ -1,0 +1,15 @@
+.#{$namespace}-t1,
+.#{$namespace}-t2,
+.#{$namespace}-t3 {@include fontReg}
+.#{$namespace}-t1 {
+  font-size: px-to-rem(32px);
+  line-height: px-to-rem(43px);
+}
+.#{$namespace}-t2 {
+  font-size: px-to-rem(24px);
+  line-height: px-to-rem(28px);
+}
+.#{$namespace}-t3 {
+  font-size: px-to-rem(14px);
+  line-height: px-to-rem(20px);
+}

@@ -11,7 +11,7 @@
   vertical-align: middle;
   white-space: nowrap;
 
-  .mf-t2 {
+  .mf-t3 {
     @include fontMed;
   }
 
@@ -23,7 +23,7 @@
     &--#{$key} {
       background-color: map-get($button, backgroundColor);
 
-      .#{$namespace}-lbl {
+      .#{$namespace}-t3 {
         color: map-get($button, textColor);
       }
 

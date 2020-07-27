@@ -3,7 +3,7 @@
   text-decoration: none;
   display: block;
   text-align: center;
-  @include fontReg;
+  @include fontMed;
   position: relative;
 
   span::after {

@@ -7,10 +7,14 @@
   background-color: $emerald;
   left: -100%;
   top: 0;
-  margin: 0 auto 104px;
-  padding: 36px 24px;
+  margin: 0 auto 25vh;
+  padding: 36px 12px;
   overflow: hidden;
   transition: left .6s ease;
+
+  @include breakpoint('mobile') {
+    padding: 36px 24px;
+  }
 
   .mf-logo {
     position: relative;
@@ -52,6 +56,17 @@
   &-mobile {
     position: relative;
     padding: 24px;
+    margin: 0 auto 52px;
+
+    .mf-link {
+      display: block;
+      text-align: center;
+      &:hover span::after,
+      &:focus span::after {
+        background-color: $moss;
+        transition: background-color .3s ease-in-out;
+      }
+    }
 
     .mf-logo {
       display: block;

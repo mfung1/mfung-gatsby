@@ -1,0 +1,32 @@
+.#{$namespace}-half {
+  padding: 0 24px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  @include breakpoint('tablet') {
+    max-width: 1200px;
+    margin: 0 auto px-to-rem(152px);
+    padding: 0;
+    flex-direction: row;
+  }
+  &_txt {
+    flex: 0 1 px-to-rem(612px);
+    @include breakpoint('tablet') {
+      padding-right: 6px;
+      margin-right: 106px;
+    }
+    
+  }
+  &_img {
+    flex: 0 1 px-to-rem(319px);
+    margin-bottom: 36px;
+    @include breakpoint('tablet') {
+      margin-bottom: 0;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+}

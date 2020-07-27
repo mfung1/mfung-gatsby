@@ -1,2 +1,41 @@
-@import './fonts',
-        './generic';
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: px-to-rem($base-font-size);
+}
+
+body {
+  background-color: $moss;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+main, section {
+  display: block; // Not block level in IE..
+}
+h1,h2,h3,h4,
+p,span,a {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, legend,
+figure,
+table, th, td, caption {
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3,h4,p {
+  margin-bottom: $base-spacing;
+}
+img {
+  display: block;
+  max-width: 100%;
+}

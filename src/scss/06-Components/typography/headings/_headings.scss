@@ -1,12 +1,26 @@
 .#{$namespace}-h1 {
-  font-size: px-to-rem(68px);
-  line-height: px-to-rem(84px);
+  font-size: px-to-rem(48px);
+  line-height: px-to-rem(54px);
 }
 .#{$namespace}-h2 {
-  font-size: 36px;
+  font-size: px-to-rem(36px);
   line-height: lineHeightRatio(36px, 42px);
 }
 .#{$namespace}-h3 {
-  font-size: 24px;
+  font-size: px-to-rem(24px);
   line-height: lineHeightRatio(24px, 28px);
+}
+@include breakpoint('tablet') {
+  .#{$namespace}-h1 {
+    font-size: px-to-rem(68px);
+    line-height: px-to-rem(84px);
+  }
+  .#{$namespace}-h2 {
+    font-size: px-to-rem(36px);
+    line-height: px-to-rem(42px);
+  }
+  .#{$namespace}-h3 {
+    font-size: px-to-rem(24px);
+    line-height: px-to-rem(28px);
+  }
 }

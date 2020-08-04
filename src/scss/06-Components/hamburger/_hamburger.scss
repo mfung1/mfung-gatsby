@@ -1,0 +1,84 @@
+.#{$namespace}-hamburger {
+	padding: 15px 15px;
+  display: block;
+  position: absolute;
+  right: 24px;
+  top: 39px;
+  z-index: 2;
+	cursor: pointer;
+	transition-property: opacity, filter;
+	transition-duration: 0.15s;
+	background-color: transparent;
+	transition-timing-function: linear;
+	font: inherit;
+	color: inherit;
+	text-transform: none;
+	border: 0;
+	margin: 0;
+	overflow: visible;
+}
+.#{$namespace}-hamburger:hover {
+	opacity: 0.7;
+}
+.#{$namespace}-hamburger.isActive:hover {
+	opacity: 0.7;
+}
+.#{$namespace}-hamburger.isActive .#{$namespace}-hamburger-inner,.#{$namespace}-hamburger.isActive .#{$namespace}-hamburger-inner::before,.#{$namespace}-hamburger.isActive .#{$namespace}-hamburger-inner::after {
+	background-color: $moss;
+}
+.#{$namespace}-hamburger-box {
+	width: 40px;
+	height: 24px;
+	display: block;
+	position: relative;
+}
+.#{$namespace}-hamburger-inner {
+	display: block;
+	top: 50%;
+	margin-top: -2px;
+}
+.#{$namespace}-hamburger-inner, .#{$namespace}-hamburger-inner::before, .#{$namespace}-hamburger-inner::after {
+	width: 40px;
+	height: 4px;
+	background-color: $algae;
+	border-radius: 4px;
+	position: absolute;
+	transition-property: transform;
+	transition-duration: 0.15s;
+	transition-timing-function: ease;
+}
+.#{$namespace}-hamburger-inner::before, .#{$namespace}-hamburger-inner::after {
+	content: "";
+	display: block;
+}
+.#{$namespace}-hamburger-inner::before {
+	top: -10px;
+}
+.#{$namespace}-hamburger-inner::after {
+	bottom: -10px;
+}
+.#{$namespace}-hamburger--elastic .#{$namespace}-hamburger-inner {
+	top: 2px;
+	transition-duration: 0.275s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.#{$namespace}-hamburger--elastic .#{$namespace}-hamburger-inner::before {
+	top: 10px;
+	transition: opacity 0.125s 0.275s ease;
+}
+.#{$namespace}-hamburger--elastic .#{$namespace}-hamburger-inner::after {
+	top: 20px;
+	transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.#{$namespace}-hamburger--elastic.isActive .#{$namespace}-hamburger-inner {
+	transform: translate3d(0, 10px, 0) rotate(135deg);
+	transition-delay: 0.075s;
+}
+.#{$namespace}-hamburger--elastic.isActive .#{$namespace}-hamburger-inner::before {
+	transition-delay: 0s;
+	opacity: 0;
+}
+.#{$namespace}-hamburger--elastic.isActive .#{$namespace}-hamburger-inner::after {
+	transform: translate3d(0, -20px, 0) rotate(-270deg);
+	transition-delay: 0.075s;
+}

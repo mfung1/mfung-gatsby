@@ -21,37 +21,7 @@
     fill: $algae;
     z-index: 2;
   }
-  &_checkbox:checked {
-    ~ .mf-logo {
-      fill: $moss;
-      transition: fill .6s ease;
-    }
-    ~ .mf-nav-mob {
-      left: 0;
-      transition: left .6s ease;
-    }
-    + label .mf-nav_mobIcon {
-      background-color: $moss;
-      transition: background-color .6s ease;
-    }
-    ~ label .hamburger-inner {
-      transition-delay: 75ms;
-      transform: translate3d(0,10px,0) rotate(135deg);
 
-      &::before {
-        transition-delay: 0s;
-        opacity: 0;
-      }
-      &::after {
-        top: 20px;
-        transition-delay: 75ms;
-        transform: translate3d(0,-20px,0) rotate(-270deg);
-        transition: transform .275s cubic-bezier(.68,-.55,.265,1.55);
-      }
-    }
-  } 
-
-  
 
   &-mobile {
     position: relative;
@@ -67,6 +37,16 @@
         transition: background-color .3s ease-in-out;
       }
     }
+    .mf-hamburger.isActive {
+      ~ .mf-logo {
+        fill: $moss;
+        transition: fill .2s ease;
+      }
+      ~ .mf-nav-mob {
+        left: 0;
+        transition: left .2s ease;
+      }
+    } 
 
     .mf-logo {
       display: block;
@@ -79,7 +59,7 @@
     label {
       position: absolute;
       right: 24px;
-      top: 36px;
+      top: 46px;
     }
   }
 
@@ -105,43 +85,6 @@
     outline: 0;
     transition: background-color .6s ease;
 
-    .hamburger {
-      position: relative;
-      display: block;
-      width: 24px;
-      height: 24px;
-      margin: 8px;
-    }
-    .hamburger-inner,
-    .hamburger-inner::before,
-    .hamburger-inner::after {
-      width: 16px;
-      height: 2px;
-      background-color: $moss;
-      border-radius: 4px;
-      position: absolute;
-    }
-    .hamburger-inner {
-      top: 2px;
-      left: calc(50% - 8px);
-      transition-delay: 75ms;
-      transition: transform .275s cubic-bezier(.68, -.55, .265, 1.55);
-      
-
-
-      &::before,
-      &::after {
-        display: block;
-        content: "";
-      }
-      &::before {
-        top: 8px;
-        transition: opacity ease .125s;
-      }
-      &::after {
-        top: 16px;
-      }
-    }
   }
 
   .mf-link {

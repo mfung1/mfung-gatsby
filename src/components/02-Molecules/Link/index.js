@@ -4,7 +4,7 @@ import {Link} from 'gatsby';
 const MFLink = (props) => {
   return (
   <Link to={props.path} className={`mf-link ` + props.classNames} activeClassName="mf-link-active">
-    <span>
+    <span className="mf-link_inner">
       {props.text}
     </span>
   </Link>

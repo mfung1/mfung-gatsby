@@ -50,8 +50,8 @@
 
     .mf-logo {
       display: block;
-      margin: 0 auto;
-      fill: $algae;
+      margin-right: auto;
+      width: 118px;
       position: relative;
       transition: fill .3s ease;
       z-index: 2;
@@ -159,7 +159,7 @@
     background-color: transparent;
     position: static;
     height: auto;
-    max-width: 1200px;
+    max-width: 1260px;
 
     .mf-link {
       color: $algae;

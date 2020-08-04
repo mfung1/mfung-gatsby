@@ -3,15 +3,17 @@
   width:100%;
   padding: 12px;
   
-  .mf-t2 {
-    max-width: px-to-rem(518px);
+  .mf-h1 {
+    max-width: px-to-rem(996px);
   }
   @include breakpoint('mobile') {
     padding: 12px 24px;
   }
   @include breakpoint('tablet') {
-    max-width: 1200px;
+    max-width: 1260px;
     margin: 0 auto 50vh;
+  }
+  @include breakpoint('largeDesktop') {
     padding: 12px 0;
   }
 }

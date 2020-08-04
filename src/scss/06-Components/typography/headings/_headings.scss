@@ -12,8 +12,8 @@
 }
 @include breakpoint('tablet') {
   .#{$namespace}-h1 {
-    font-size: px-to-rem(68px);
-    line-height: px-to-rem(84px);
+    font-size: px-to-rem(72px);
+    line-height: normal;
   }
   .#{$namespace}-h2 {
     font-size: px-to-rem(36px);

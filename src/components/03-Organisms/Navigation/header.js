@@ -9,9 +9,9 @@ const Navigation = ({ siteTitle }) => (
       <nav className="mf-nav mf-nav-mob">
         <div className="mf-nav_cnt">
           <ul className="mf-nav_lnkcnt">
-            <li><a href="/blog" className="mf-link mf-t2"><span>Blog</span></a></li>
-            <li><a href="/about" className="mf-link mf-t2"><span>About</span></a></li>
-            <li><a href="/contact" className="mf-link mf-t2"><span>Contact</span></a></li>
+          <li><MFLink internal path="/blog" classNames="mf-t2" text="Blog"/></li>
+          <li><MFLink internal path="/about" classNames="mf-t2" text="About"/></li>
+          <li><MFLink internal path="/contact" classNames="mf-t2" text="Contact"/></li>
           </ul>
         </div>
       </nav>
@@ -20,9 +20,9 @@ const Navigation = ({ siteTitle }) => (
       <div className="mf-nav_cnt">
         <svg className="mf-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 235 84" width="235px" height="84px"><use href="#logo" /></svg>
         <ul className="mf-nav_lnkcnt">
-          <li><MFLink path="/blog" classNames="mf-t2" text="Blog"/></li>
-          <li><a href="/about" className="mf-link mf-t2"><span>About</span></a></li>
-          <li><a href="/contact" className="mf-link mf-t2"><span>Contact</span></a></li>
+          <li><MFLink internal path="/blog" classNames="mf-t2" text="Blog"/></li>
+          <li><MFLink internal path="/about" classNames="mf-t2" text="About"/></li>
+          <li><MFLink internal path="/contact" classNames="mf-t2" text="Contact"/></li>
         </ul>
       </div>
     </nav>

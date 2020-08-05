@@ -50,11 +50,15 @@
 
     .mf-logo {
       display: block;
-      margin-right: auto;
       width: 118px;
+      margin-right: auto;
       position: relative;
       transition: fill .3s ease;
       z-index: 2;
+      @include breakpoint('mobile') {
+        width: auto;
+        transition: width .3s ease;
+      }
     }
     label {
       position: absolute;
@@ -121,6 +125,7 @@
     display: grid;
     align-items: center;
     justify-content: center;
+    z-index: 1;
     padding: 133px 0 0;
     grid-template-columns: 1fr;
     .mf-nav_lnkcnt {

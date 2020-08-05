@@ -1,0 +1,8 @@
+.mf-icons {
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  grid-gap: 24px;
+  grid-template-rows: auto;
+  max-width: px-to-rem(264px);
+  margin-right: auto;
+}
